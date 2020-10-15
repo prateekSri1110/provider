@@ -42,15 +42,43 @@ if __name__ == '__main__':
         a=list(map(int, input().rstrip().split()))
         
         # Pls Help me add try and catch
+         
+         try:
+            
+            if(dicr[a[0]][2]>a[1]):
+                dicr[a[0]][2]=a[1]
+            if(dicr[a[0]][3]>a[2]):
+                dicr[a[0]][3]=a[2]
+        except:
+            dicr[a[0]]=[set([]),set([]),[],[]]
+           
+            dicr[a[0]][2]=a[1]
+            dicr[a[0]][3]=a[2]
+            
+            
+            
+        try:
+           
+            if(dicb[a[1]][2]>a[0]):
+                dicb[a[1]][2]=a[0]
+            if(dicb[a[1]][3]>a[2]):
+                dicb[a[1]][3]=a[2]
+        except:
+            dicb[a[1]]=[set([]),set([]),[],[]]
+            dicb[a[1]][2]=a[0]
+            dicb[a[1]][3]=a[2]
+        try:
+            if(dicg[a[2]][2]>a[0]):
+                dicg[a[2]][2]=a[0]
+            if(dicg[a[2]][3]>a[1]):
+                dicg[a[2]][3]=a[1]
+        except:
+            dicg[a[2]]=[set([]),set([]),[],[]]
+            dicg[a[2]][2]=a[0]
+            dicg[a[2]][3]=a[1]
         
         
-        
-        
-        
-        
-        
-        
-        
+   
         
         
     # print(dicr,"\n",dicb,"\n",dicg)
